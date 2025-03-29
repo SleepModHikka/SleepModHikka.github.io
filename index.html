@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Страница с треугольниками</title>
+<style>
+body {
+  background-color: #fff;
+  font-family: sans-serif;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  position: absolute;
+  border-style: solid;
+}
+
+.triangle.top-right {
+  top: 0;
+  right: 0;
+  border-width: 0 100vh 100vh 0;
+  border-color: transparent #FFFF00 transparent transparent;
+}
+
+.triangle.bottom-left {
+  bottom: 0;
+  left: 0;
+  border-width: 100vh 0 0 100vh;
+  border-color: transparent transparent transparent #FFFF00;
+}
+
+.text1 {
+  font-size: 3em;
+  color: #000;
+  text-align: center;
+  margin-top: 25vh;
+}
+
+.text2 {
+  font-size: 1.5em;
+  color: #000;
+  text-align: center;
+  margin-bottom: 25vh;
+}
+</style>
+</head>
+<body>
+  <div class="triangle top-right"></div>
+  <div class="triangle bottom-left"></div>
+  <div class="text1">текст 1</div>
+  <div class="text2">текст #2</div>
+</body>
+</html>
